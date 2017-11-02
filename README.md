@@ -16,10 +16,15 @@ Arduino.
 
 ### 2) EasyAir Application Organization
 jake.laney.easyair
+
     MainActivity.java - Top level activity
+    
     -> adapters
+    
         BluetoothDevicesAdapter.java - ListView needs to display available devices
+        
         SwipePageAdapter.java - Helps manage swipe navigation between fragments
+        
     -> fragments
         PMSensorFragment.java - Provides views for connecting/reading from the sensor
         PMHistoryFragment.java - Displays graphs of stored pm2.5 readings
