@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-#### Demo Video - https://drive.google.com/drive/folders/0B9ArDkUFb8QtbFdKWDJuem92OHM?usp=sharing
+### Demo Video - https://drive.google.com/drive/folders/0B9ArDkUFb8QtbFdKWDJuem92OHM?usp=sharing
 
 1) About
 2) Application Organization
@@ -73,10 +72,3 @@ PM2.5 Ranges - http://aqicn.org/faq/2013-09-09/revised-pm25-aqi-breakpoints/
 The file storage infrastructure is only partially complete. It can open and
 read/write to the local data file. However, proper display with the PMHistoryFragment
 is not yet complete.
-=======
-# BluetoothPM2.5Android
-An application for displaying pm2.5 (air particle) concentration data from an Arduino-connected pm2.5 sensor
-### Features
-1 A
-2 B
->>>>>>> 0aa3ee192af45e98883a2d798c264eb0d303b162
