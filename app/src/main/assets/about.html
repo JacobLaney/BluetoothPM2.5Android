@@ -1,0 +1,60 @@
+
+<html>
+<style>
+    body {
+        background-color: black;
+    }
+    h1, h3, p, li {
+        color: white;
+    }
+</style>
+<body>
+<center>
+    <h1>About</h1>
+    <p>
+        Project by: Jacob Laney 李傑
+    </p>
+</center>
+<h3>Structural Features</h3>
+<ul>
+    <li>
+        I implemented swipe navigation for the app. Three pages exist:
+        a pm2.5 sensor page, data history page, and an about page.
+    </li>
+    <li>
+        I added buttons to the swipe navigation feature to allow
+        easier control depending on the device that is used.
+    </li>
+    <li>
+        The pm2.5 sensor page now has a moving graph that shows
+        the data updating live.
+    </li>
+</ul>
+<h3>Bluetooth Features</h3>
+<ul>
+    <li>
+        A lost connection to the device will return the user to the
+        bluetooth connection page.
+    </li>
+    <li>
+        A thread for the Bluetooth connection routine.
+        User experience is no longer interrupted by this slow task.
+    </li>
+    <li>
+        A timer task that updates the device list every few seconds.
+        Now the user does not need to hit a button to refresh the list.
+    </li>
+</ul>
+<h3>Data Storage Features</h3>
+<ul>
+    <li>
+        Began implementing data storage, but this feature is only
+        partially complete.
+    </li>
+    <li>
+        The data history page shows some test data on a graph. This is
+        a proof of concept for my data storage class "PMBTFileService".
+    </li>
+</ul>
+</body>
+</html>
