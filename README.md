@@ -1,11 +1,7 @@
 
+<p align="center">
 ![](assets/demo.gif)
-
-1) About
-2) Application Organization
-3) Overview of Features
-4) Sources
-5) Notes
+</p>
 
 ### 1) About
 This is an Android application. It connects via Bluetooth to the an Arduino
