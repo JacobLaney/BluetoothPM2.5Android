@@ -1,17 +1,37 @@
+This Android application connects via Bluetooth to the an Arduino
+device that broadcasts pm2.5 concentration measurements.
 
 <p align="center">
     <image src="https://github.com/JacobLaney/BluetoothPM2.5Android/blob/master/assets/demo.gif" />
 </p>
 
-### 1) About
-This is an Android application. It connects via Bluetooth to the an Arduino
-device that broadcasts pm2.5 concentration measurements.
+### Overview of Features
+Bluetooth
 
-The directory "EasyAir" is an Android Studio Project containing the Android
-application. The directory "PM2.5_sensor_simple" contains the code for the
-Arduino.
+    * I added new features to the bluetooth functionality. The connection and
+    listening actions have been moved to a separate thread. This prevents
+    interruptions to the user. Once the user pairs a device, the device is
+    automatically added to the list of options. Selecting a device opens a live
+    data display. if connection is lost, the app returns to device selection.
+    
+Structural Features
 
-### 2) EasyAir Application Organization
+    * I implemented swipe navigation for the app. Three pages exist:
+    a pm2.5 sensor page, data history page, and an about page. I added buttons
+    to the swipe navigation feature to allow easier control depending on the
+    device that is used. The pm2.5 sensor page now has a moving graph that shows
+    the data updating live. A circle around the pm2.5 value changes color as
+    the value changes. A TextView provides a qualitative description of the value.
+    The bluetooth animation at the bluetooth connection screen was also created by me.
+    
+Data Storage Features
+
+    * I began implementing data storage, but this feature is only
+    partially complete. The data history page shows some data on a graph.
+    Although not complete, a lot of code now exists that allows read/write
+    to local storage.
+
+### EasyAir Application Organization
 jake.laney.easyair
 
     MainActivity.java - Top level activity
@@ -60,33 +80,7 @@ jake.laney.easyair
         
         StatusTextView.java - updates with pm2.5 to display quality of air
 
-### 3) Overview of Features
-Bluetooth
-
-    * I added new features to the bluetooth functionality. The connection and
-    listening actions have been moved to a separate thread. This prevents
-    interruptions to the user. Once the user pairs a device, the device is
-    automatically added to the list of options. Selecting a device opens a live
-    data display. if connection is lost, the app returns to device selection.
-    
-Structural Features
-
-    * I implemented swipe navigation for the app. Three pages exist:
-    a pm2.5 sensor page, data history page, and an about page. I added buttons
-    to the swipe navigation feature to allow easier control depending on the
-    device that is used. The pm2.5 sensor page now has a moving graph that shows
-    the data updating live. A circle around the pm2.5 value changes color as
-    the value changes. A TextView provides a qualitative description of the value.
-    The bluetooth animation at the bluetooth connection screen was also created by me.
-    
-Data Storage Features
-
-    * I began implementing data storage, but this feature is only
-    partially complete. The data history page shows some data on a graph.
-    Although not complete, a lot of code now exists that allows read/write
-    to local storage.
-
-### 4) Sources
+### Sources
 
 Charts/Graphing - https://github.com/PhilJay/MPAndroidChart
 
@@ -98,7 +92,7 @@ Swipe Navigation - https://developer.android.com/training/implementing-navigatio
 
 PM2.5 Ranges - http://aqicn.org/faq/2013-09-09/revised-pm25-aqi-breakpoints/
 
-### 5) Note
+### Notes
 
 The file storage infrastructure is only partially complete. It can open and
 read/write to the local data file. However, proper display with the PMHistoryFragment
