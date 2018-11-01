@@ -1,6 +1,6 @@
 
 <p align="center">
-![](assets/demo.gif)
+    <image src="https://github.com/JacobLaney/BluetoothPM2.5Android/blob/master/assets/demo.gif" />
 </p>
 
 ### 1) About
