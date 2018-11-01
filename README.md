@@ -1,3 +1,6 @@
+
+![](assets/demo.gif)
+
 1) About
 2) Application Organization
 3) Overview of Features
